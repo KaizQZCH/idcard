@@ -1,0 +1,125 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ID Card Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+            background: linear-gradient(135deg, #000000, #434343);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            color: white;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .social-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+        }
+        .music-player {
+            transition: opacity 0.3s ease-in-out;
+            background: linear-gradient(135deg, #434343, #000000);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .music-player:hover {
+            opacity: 0.8;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="card text-white shadow-lg rounded-lg p-6 max-w-sm text-center fade-in">
+   <img alt="Profile picture of a person with a friendly smile" class="w-32 h-32 rounded-full mx-auto mb-4" height="150" src="https://i.imgur.com/xPAXi37.png" width="150"/>
+   <h2 class="text-2xl font-bold mb-2">
+    Alifiansah Rahmad Putra
+   </h2>
+   <p class="text-gray-300 mb-4">
+    Web Developer
+   </p>
+   <p class="text-gray-300 mb-4">
+    Hi, I'm Alif, a passionate web developer with over 3 years of experience in creating dynamic and responsive websites. I love coding and am always eager to learn new technologies.
+   </p>
+   <div class="flex justify-center space-x-4 mb-4">
+    <a class="social-icon text-green-500 text-2xl" href="https://open.spotify.com/user/31ctqb6mefykvjivr5r7bixdd5xe?si=63be73599bb24c3c" target="_blank">
+     <i class="fab fa-spotify">
+     </i>
+    </a>
+    <a class="social-icon text-pink-500 text-2xl" href="https://www.instagram.com/alifnsh_/" target="_blank">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+    <a class="social-icon text-blue-500 text-2xl" href="https://x.com/JayAlvareno" target="_blank">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a class="social-icon text-purple-500 text-2xl" href="https://discord.com/invite/yXZB9vXAqc" target="_blank">
+     <i class="fab fa-discord">
+     </i>
+    </a>
+    <a class="social-icon text-red-500 text-2xl" href="https://www.youtube.com/@KaizQZ" target="_blank">
+     <i class="fab fa-youtube">
+     </i>
+    </a>
+    <a class="social-icon text-yellow-500 text-2xl" href="https://saweria.co/KaizQZ" target="_blank">
+     <i class="fas fa-donate">
+     </i>
+    </a>
+   </div>
+   <div class="music-player bg-gray-800 p-4 rounded-lg">
+    <h3 class="text-lg font-semibold mb-2">
+     Now Playing
+    </h3>
+    <p class="text-gray-400 mb-2">
+     Drunk Text - Henry Moodie
+    </p>
+    <div class="flex items-center justify-center space-x-2">
+     <button class="text-gray-400">
+      <i class="fas fa-backward">
+      </i>
+     </button>
+     <button class="text-gray-400">
+      <i class="fas fa-play">
+      </i>
+     </button>
+     <button class="text-gray-400">
+      <i class="fas fa-forward">
+      </i>
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
